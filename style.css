@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "josefin";
+    src: url("images/JosefinSans-Medium.ttf");
+}
+*{
+    font-family: "josefin";
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("images/bg-mobile-dark.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+   background-color:  hsl(235, 21%, 11%);
+}
+#todo{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#todo h1{
+    font-size: 30px;
+    letter-spacing: 10px;
+    color: white;
+    margin: 0;
+}
+header{
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+}
+#new{
+    height:6.5vh;
+    border-radius: 5px;
+    width:80%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+    background-color:     hsl(235, 24%, 19%);
+}
+.radial{
+    width:25px;
+    height:25px;
+    border-radius: 50px;
+    margin-left: 5%;
+    border: 1px solid rgb(89, 89, 89);
+}
+#new input{
+    height:100%;
+    width:85%;
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 2.5vh;
+    background-color:    hsl(235, 24%, 19%);
+}
+#new input:focus{
+    outline: none;
+    border:none;
+}
+#test{
+    display: flex;
+    height:6.5vh;
+    border-radius: 5px;
+    width:80vw;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color:    hsl(235, 24%, 19%);
+    color:  hsl(234, 39%, 85%);
+    font-size: 2.5vh;
+}
+#text{
+    margin-left: 5%;
+} 
+#test img{
+    margin-right:5%;
+}
+#check{
+    display: flex;
+    width:90%;
+    align-items: center;
+    height:100%;
+}
+#inf{
+    display: flex;
+    height:6.5vh;
+    background-color:    hsl(235, 24%, 19%);
+    width:100%;
+    justify-content: space-between;
+    border-radius:5px;
+    color :hsl(234, 11%, 52%);
+    align-items: center;
+}
+#inf p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#inf p:hover{
+    color:   hsl(220, 98%, 61%);
+    cursor: pointer;
+}
+#select{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+    width:100%;
+    margin-top: 5%;
+    background-color:hsl(235, 24%, 19%);
+    border-radius: 5px;
+    color :hsl(234, 11%, 52%);
+    box-shadow: 0px 10px 30px rgb(17, 17, 17);
+}
+#select p:hover{
+    color:   hsl(220, 98%, 61%);
+    cursor: pointer;
+}
+hr{
+    margin: 0;
+    padding:0;
+    width:80%;
+    border:0.5px solid hsl(233, 14%, 35%)
+}
+#drag{
+    color :hsl(237, 14%, 26%);
+    margin-top: 10%;
+}
+#edit{
+    width:80%;
+    height:15%;
+}
+
+@media  (width>= 1000px) {
+    body{
+        background-image: url("images/bg-desktop-dark.jpg");
+    }
+    #todo{
+        width:50%;
+        height:100vh;
+
+    }
+    #test{
+        width:40vw;
+    }
+    #edit{
+        position:relative;
+    }
+    #inf{
+        position:absolute;
+        bottom:0;
+        display: flex;
+        align-items: center;
+
+    }
+    #select{
+        position:absolute;
+        bottom:0;
+        background:none;
+        width:40%;
+        left: 26%;
+        box-shadow: 0px 0px 0px ;
+    }
+}

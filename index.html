@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+  </style>
+</head>
+<body>
+  <section id="todo">
+    <header>
+    <h1>TODO </h1>
+    <img src="images/icon-sun.svg" alt="">
+  </header>
+  <div id="new">
+    <div class="radial" onclick="new_card()"></div>
+    <input type="text" name="" id="new_todo" placeholder="Create a new todo...">
+  </div>
+<div id="card">
+  <template data-template>
+
+  <!-- Add dynamic number -->
+  <div id="test" data-target >
+    <div id="check">
+      <div class="radial"></div>
+      <div id="text" data-text></div>
+    </div>
+    <img src="images/icon-cross.svg" alt="" onclick="eliminar()">
+    </div>
+</template>
+</div>
+<div id="edit">
+  <div id="inf">
+  <p>items left</p> 
+  <p> Clear Completed</p>
+</div>
+  <div id="select">
+   <p> All</p>
+   <p> Active </p>
+   <p> Completed</p>
+  </div>
+</div>
+  <div id="drag">
+  Drag and drop to reorder list
+</div>
+</section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="codigo.js"></script>
+</body>
+</html>
